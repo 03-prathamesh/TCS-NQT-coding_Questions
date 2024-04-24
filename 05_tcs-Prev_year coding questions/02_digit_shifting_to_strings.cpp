@@ -33,8 +33,9 @@ int main(){
    for(int i=0;i<str.size();i++){
        if(str[i]>='A' && str[i]<='Z'){
            if(str[i]+key>'Z'){
-              int diff=(str[i]+key)-90;
-              str[i]=diff;
+              int diff=str[i]-26;  //best logic that i have learned
+              int add=diff+key;
+              str[i]=add;
            }
            else{
              str[i]=str[i]+key;
@@ -42,8 +43,9 @@ int main(){
        }
        else if(str[i]>='a' && str[i]<='z'){
         if(str[i]+key>'z'){
-              int diff=(str[i]+key)-122;
-              str[i]=diff;
+              int diff=str[i]-26;
+              int add=diff+key;
+              str[i]=add;
            }
            else{
              str[i]=str[i]+key;
@@ -51,8 +53,9 @@ int main(){
        }
        else{
            if(str[i]+key>'9'){
-              int diff=(str[i]+key)-57;
-              str[i]=diff;
+              int diff=str[i]-10;
+              int add=diff+key;
+              str[i]=add;
            }
            else{
              str[i]=str[i]+key;

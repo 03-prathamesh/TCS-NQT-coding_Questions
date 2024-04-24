@@ -30,7 +30,7 @@ using namespace std;
 int main(){
 
 
-
-
+ char str=90;
+ cout<<str;
     return 0;
 }
